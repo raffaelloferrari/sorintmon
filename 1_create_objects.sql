@@ -1,4 +1,4 @@
-CREATE USER sorintmon IDENTIFIED BY Password;
+CREATE USER sorintmon IDENTIFIED BY Password QUOTA UNLIMITED ON USERS;
 grant connect, resource to sorintmon;
 
 DROP TABLE sorintmon.sql_monitor;
