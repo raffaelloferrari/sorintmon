@@ -15,7 +15,7 @@ CREATE TABLE sorintmon.sql_monitor (
   capture_date       DATE,
   report_date        DATE,
   sql_text           VARCHAR2(2000),
-  ELAPSED_TIME       NUMBER
+  ELAPSED_TIME       NUMBER,
   mon_report         CLOB,
 PRIMARY KEY (sql_id, key));
 
