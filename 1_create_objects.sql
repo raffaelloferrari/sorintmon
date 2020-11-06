@@ -1,7 +1,7 @@
 CREATE USER sorintmon IDENTIFIED BY Password;
-grant connect, resource to sorint;
+grant connect, resource to sorintmon;
 
-DROP TABLE sorint.sql_monitor;
+DROP TABLE sorintmon.sql_monitor;
 
 CREATE TABLE sorintmon.sql_monitor (
   sql_id             VARCHAR2(13),
