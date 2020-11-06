@@ -35,7 +35,7 @@ while  y < 10000 loop
    x := x+1;
    r := x*y;
    end loop;
-   /*sorintmon|0,1|*/
+   /*sorintmon|0.1|*/
 x := 0;
 end loop;
 dbms_output.put_line('result = '||r);
