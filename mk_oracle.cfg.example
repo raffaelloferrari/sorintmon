@@ -1,0 +1,14 @@
+### !!!!!!!!!!!!!!!!!!!!!!!!! ATTENTION !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+### !!!!! DATABASE INCLUDED IN THIS CHECK MUST HAVE TUNING PACK LICENSE !
+### !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+SQLS_SECTIONS="sorintmon"
+
+sorintmon () {
+    SQLS_SIDS="DB01 DB02"
+    SQLS_DIR="/etc/check_mk"
+    SQLS_SQL="r.sql"
+    SQLS_MAX_CACHE_AGE=60
+    SQLS_PARAMETERS="DEFINE SCHEMA_NAME=C##CHECK_MK"
+    SQLS_ITEM_NAME="Sorintmon"
+}
